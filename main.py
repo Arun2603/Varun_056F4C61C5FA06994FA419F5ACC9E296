@@ -1,7 +1,10 @@
-def ISLP(y):
-    if(y % 4 == 0):
-      print("true");
-    else:
-      print("false");
-year=int(input("Enter the year:"));
-print(ISLP(year));
+def factorial(x):
+  if x == 1:
+    return 1
+  else:
+    return(x * factorial(x - 1))
+
+
+num = int(input("Enter a number:"))
+result = factorial(num)
+print("The factorial of",num, "is", result)
